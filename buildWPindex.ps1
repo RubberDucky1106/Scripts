@@ -40,6 +40,6 @@ Function Build_Index
 	Until ($nullpage -eq $True)
 
 	# take arraylist and sort alphabetically removing duplicates. output to text file.
-	$extractionsArray | Sort-Object -Unique | Out-File -Path #****WHERE?****
+	$extractionsArray | Sort-Object -Unique | Out-File -Path #***WHERE?***
 
 }
