@@ -30,7 +30,10 @@ Function Build_Index
 		#add the extracted plugins/themes to the arraylist. Out-null because adding items to array has terminal output. increment page count by one.
 		Else
 		{
-			$extractionsArray.Add($extractions) | Out-Null
+			Foreach ($link in $extractions)
+			{
+				$extractionsArray.Add($link) | Out-Null
+			}
 			$count++
 		}
 	}
