@@ -7,7 +7,7 @@ Function Build_Index
 		[ValidateSet("plugins","themes")]
 		[string]$Index
 	)
-	
+	#test
 	#instatiate arraylist to contain all plugins/themes in loop
 	[System.Collections.ArrayList]$extractionsArray = @()
 	#count to iterate through pages via URI
